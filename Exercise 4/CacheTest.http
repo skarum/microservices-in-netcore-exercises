@@ -1,0 +1,8 @@
+
+# @name firstRequest
+GET  https://localhost:5001/api/hallo/1
+
+###
+
+GET https://localhost:5001/api/hallo/1 HTTP/1.1
+ETag: {{firstRequest.response.headers.ETag}}
