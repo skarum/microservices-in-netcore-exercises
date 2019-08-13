@@ -1,0 +1,27 @@
+GET https://localhost:5001/api/cart/1
+
+###
+
+POST https://localhost:5001/api/cart/1
+Content-Type: application/json
+
+{ 
+    "name":"product1"
+    }
+
+###
+
+POST https://localhost:5001/api/cart/1
+Content-Type: application/json
+
+{ 
+    "name":"product2"
+}
+
+###
+
+DELETE  https://localhost:5001/api/cart/1
+
+###
+
+DELETE  https://localhost:5001/api/cart/1/product1
