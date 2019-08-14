@@ -17,10 +17,10 @@ namespace Exercise_4
         {
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-            // Console.WriteLine("From class: Before");
+            Console.WriteLine("From class: Before");
             await _next(ctx);
             stopwatch.Stop();
-            // Console.WriteLine($"From class: after. Execution time {stopwatch.ElapsedMilliseconds} ms.");
+            Console.WriteLine($"From class: after. Execution time {stopwatch.ElapsedMilliseconds} ms.");
         }
     }
 }
